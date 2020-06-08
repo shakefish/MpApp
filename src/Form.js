@@ -7,23 +7,19 @@ class Form extends Component {
   }
 
   state = this.initialState
-}
-
-submitForm = () => {
+  submitForm = () => {
     this.props.handleSubmit(this.state)
     this.setState(this.initialState)
     
   }
-
-handleChange = event => {
+  handleChange = event => {
     const { name, value } = event.target
   
     this.setState({
       [name]: value,
     })
   }
-
-  render() ;{
+  render() {
     const { name, job } = this.state;
   
     return (
@@ -46,6 +42,7 @@ handleChange = event => {
       </form>
     );
   }
-  
+}
+
   
   export default Form;
