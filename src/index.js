@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
+const heading = <h1 className="site-heading">Hello, React</h1>
 class App extends Component {
+  
   render() {
     return (
-      <div className="App">
-        <h1>Hello, React!</h1>
-      </div>
+      heading
     )
   }
 }
